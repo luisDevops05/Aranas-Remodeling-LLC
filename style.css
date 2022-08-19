@@ -38,3 +38,10 @@ header a:hover {
   color: darkblue;
   text-decoration: underline;
 }
+
+.heroContainer {
+  background-image: url("/images/hero.jpg");
+  height: 620px;
+  background-size: 100% 610px;
+  background-repeat: no-repeat;
+}
