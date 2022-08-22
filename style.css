@@ -195,7 +195,7 @@ header a:hover {
 .test {
   font-size: 18px;
   line-height: 1.5;
-  text-align: center;
+  text-align: left;
   border-radius: 25px;
   box-shadow: 0 0 10px black;
   padding: 20px;
@@ -209,4 +209,177 @@ header a:hover {
   text-align: end;
   padding-top: 50px;
   padding-right: 20px;
+}
+
+.contact {
+  background-color: rgba(128, 128, 128, 0.324);
+  margin-top: 50px;
+}
+
+.contact h2 {
+  text-align: center;
+  font-size: 35px;
+}
+
+.formContainer {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  grid-template-columns: 400px 400px;
+  justify-content: center;
+  height: 500px;
+  align-content: center;
+  font-size: 18px;
+}
+
+#form input {
+  width: 100%;
+  display: block;
+  border-radius: 15px;
+  padding: 10px;
+  border: none;
+}
+#message {
+  height: 120px;
+  text-align: left;
+  width: 100%;
+  resize: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 15px;
+}
+
+#btnS {
+  padding: 10px;
+  background-color: black;
+}
+
+#btnS a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+#btnS a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: yellow;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.footer a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer a:hover {
+  color: hotpink;
+}
+
+@media only screen and (max-width: 1024px) {
+  .holder {
+    grid-template-columns: 620px 300px;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .holder {
+    grid-template-columns: 520px 240px;
+  }
+  .testContainer {
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(2, 550px);
+  }
+  .formContainer {
+    grid-template-columns: 300px 300px;
+  }
+  header a {
+    font-size: 23px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  header a {
+    font-size: 20px;
+  }
+  .holder {
+    grid-template-columns: 400px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  #heroI {
+    margin-bottom: 50px;
+    width: 300px;
+    height: 300px;
+  }
+  .aboutContianer {
+    grid-template-columns: 300px;
+  }
+  .testContainer {
+    grid-template-columns: 400px;
+    grid-template-rows: 300px;
+  }
+  .formContainer {
+    grid-template-columns: 300px;
+    height: 600px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .aboutContianer {
+    grid-template-columns: 700px;
+  }
+}
+
+@media only screen and (max-width: 412px) {
+  .aboutContianer {
+    grid-template-columns: 300px;
+  }
+  .holder {
+    grid-template-columns: 300px;
+  }
+  .formContainer {
+    grid-template-columns: 300px;
+  }
+  .footer h3 {
+    font-size: 18px;
+  }
+  header a {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .testContainer {
+    grid-template-columns: 290px;
+  }
+  header a {
+    font-size: 15px;
+  }
+  .testContainer {
+    grid-template-columns: 290px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .aboutContianer {
+    grid-template-columns: 300px;
+  }
+  .holder {
+    grid-template-columns: 300px;
+  }
+
+  .testContainer {
+    grid-template-columns: 300px;
+  }
+}
+@media only screen and (max-width: 912px) {
+  .testContainer {
+    grid-template-columns: 600px;
+    grid-template-rows: 200px;
+  }
 }
