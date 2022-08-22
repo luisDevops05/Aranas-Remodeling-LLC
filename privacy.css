@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Changa&family=Slabo+27px&family=Zen+Dots&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Changa", sans-serif;
+}
+
+header {
+  background-color: yellow;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+#logo {
+  width: 90px;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+header a:hover {
+  text-decoration: underline;
+  color: hotpink;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  background-color: yellow;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.content {
+  background-color: rgba(128, 128, 128, 0.146);
+  display: grid;
+  grid-template-columns: 700px;
+  justify-content: center;
+  padding-top: 90px;
+  padding-bottom: 80px;
+}
+@media only screen and (max-width: 540px) {
+  header h1 {
+    font-size: 20px;
+  }
+  .content {
+    grid-template-columns: 400px;
+  }
+}
+@media only screen and (max-width: 414px) {
+  header h1 {
+    font-size: 15px;
+  }
+
+  .goBack {
+    font-size: 15px;
+  }
+  .content {
+    grid-template-columns: 300px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  #logo {
+    width: 50px;
+  }
+  footer h3 {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .content {
+    grid-template-columns: 280px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  header h1 {
+    font-size: 15px;
+  }
+  .goBack {
+    font-size: 15px;
+  }
+  .content {
+    grid-template-columns: 300px;
+  }
+  #logo {
+    width: 50px;
+  }
+  footer h3 {
+    font-size: 15px;
+  }
+}
