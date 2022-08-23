@@ -1,3 +1,20 @@
+let phoneNumber = document.getElementById('phone')
+
+let email = document.getElementById('m')
+
+phoneNumber.addEventListener('click',function(){
+  event.preventDefault()
+})
+email.addEventListener('click',function(){
+  event.preventDefault()
+})
+
+
+
+
+
+
+
 document.querySelectorAll('.image-container img').forEach(image =>{
   image.onclick =()=>{
     document.querySelector('.popup-image').style.display = 'block'
